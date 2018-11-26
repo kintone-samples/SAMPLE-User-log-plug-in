@@ -16,7 +16,7 @@ jQuery.noConflict();
     }
 
     function setDropDown() {
-        // Retrieve field information, then set dropdown
+        // Retrieve field information, then set drop-down
         return kintone.api(kintone.api.url('/k/v1/preview/app/form/fields', true), 'GET',
             {'app': kintone.app.getId()}).then(function(resp) {
 
@@ -40,11 +40,11 @@ jQuery.noConflict();
             // Set default values
             $('#select_user_field').val(CONF.user_log);
         }, function(resp) {
-            return alert('Failed to retrieve field(s) information');
+            return alert('Failed to retrieve field information');
         });
     }
     $(document).ready(function() {
-        // Set dropdown list
+        // Set drop-down list
         setDropDown();
         // Set input values when 'Save' button is clicked
         $('#check-plugin-submit').click(function() {
