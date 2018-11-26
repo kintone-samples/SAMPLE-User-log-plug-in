@@ -26,7 +26,7 @@
     "en": "User Log Plug-in"
   },
   "description": {
-    "en": "This sample plug-in logs users when they have viewed a record within the App. The user is automatically added to the specified User selection field."
+    "en": "This sample plug-in logs users when they have viewed a record within the App. The user is automatically added to the specified User Selection field."
   },
   "homepage_url": {
     "en": "https://developer.kintone.io/hc/en-us/articles/115005618448"
