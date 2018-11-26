@@ -1,6 +1,6 @@
 /*
  * This sample code logs users who have viewed the record.
- * The name of the user who viewed the record is automatically placed in the User selection field.
+ * The name of the user who viewed the record is automatically placed in the User Selection field.
  * Copyright (c) 2018 Cybozu
  *
  * Licensed under the MIT License
@@ -8,14 +8,14 @@
 (function(PLUGIN_ID) {
     'use strict';
 
-    // Get plugin configuration settings
+    // Get plug-in configuration settings
     var CONFIG = kintone.plugin.app.getConfig(PLUGIN_ID);
-    // Get each settings
+    // Get each setting
     if (!CONFIG) {
         return false;
     }
 
-    var VIEWEDUSERS = CONFIG.user_log; //field code of user selection field
+    var VIEWEDUSERS = CONFIG.user_log; // Field code of user selection field
     var events = ['app.record.detail.show'];
 
     kintone.events.on(events, function(event) {
