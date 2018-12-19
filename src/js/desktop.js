@@ -37,12 +37,12 @@
             "app": kintone.app.getId(),
             "id": kintone.app.record.getId(),
             "record": {
-                [VIEWEDUSERS]: {
-                    "value": users.concat({
-                        "code": myUserCode
-                    })
-                }
             }
+        };
+        param.record[VIEWEDUSERS] = {
+            "value": users.concat({
+                "code": myUserCode
+            })
         };
         kintone.api(kintone.api.url('/k/v1/record', true), 'PUT', param).then(function(resp) {
             location.reload();
