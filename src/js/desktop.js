@@ -36,8 +36,7 @@
         var param = {
             "app": kintone.app.getId(),
             "id": kintone.app.record.getId(),
-            "record": {
-            }
+            "record": {}
         };
         param.record[VIEWEDUSERS] = {
             "value": users.concat({
